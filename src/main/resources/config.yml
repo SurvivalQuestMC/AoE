@@ -1,0 +1,6 @@
+test:
+  Distance: 10
+  Duration: 10
+  PotionEffect: SPEED
+  ParticleEffect: WATER_BUBBLE
+  RingColour: 5

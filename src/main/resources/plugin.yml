@@ -3,3 +3,7 @@ version: '${project.version}'
 main: net.survivalquest.aoe.AoE
 api-version: 1.19
 authors: [ Frozenbloo ]
+commands:
+  areaofeffect:
+    aliases:
+      - aoe
