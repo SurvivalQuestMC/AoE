@@ -22,7 +22,7 @@ public class TabCompleteAoE implements TabCompleter {
             return null;
         }
         if (args.length == 1){
-            return Arrays.asList("reload");
+            return Arrays.asList("effect", "reload");
         }
         return null;
     }

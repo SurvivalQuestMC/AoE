@@ -2,13 +2,11 @@ package net.survivalquest.aoe.AoEGen;
 
 import net.survivalquest.aoe.AoE;
 import net.survivalquest.aoe.AoEUtils;
-import org.bukkit.Color;
 import org.bukkit.Particle;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffectType;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class AoEManager {

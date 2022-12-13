@@ -79,17 +79,17 @@ public final class AoE extends JavaPlugin {
             int i = 0;
             public void run() {
                 i++;
-                if(i == duration) {
+                if(i == (duration*2)) {
                     this.cancel();
                 }
                 for (int d = 0; d <= 90; d += 1) {
-                    Location particleLoc = new Location(location.getWorld(), location.getX(), location.getY(), location.getZ());
+                    Location particleLoc = new Location(location.getWorld(), location.getX(), location.getY() + 0.1f, location.getZ());
                     particleLoc.setX(location.getX() + Math.cos(d) * size);
                     particleLoc.setZ(location.getZ() + Math.sin(d) * size);
-                    location.getWorld().spawnParticle(Particle.REDSTONE, particleLoc, 1, new Particle.DustOptions(color, 1));
+                    location.getWorld().spawnParticle(Particle.REDSTONE, particleLoc, 1, new Particle.DustOptions(color, 2));
                 }
             }
-        }.runTaskTimer(this, 0, 20);
+        }.runTaskTimer(this, 0, 10);
     }
 }
 
